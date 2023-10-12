@@ -1,8 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Bakbak_One } from 'next/font/google'
+import FlowField from '@/components/FlowField'
+//const inter = Inter({ subsets: ['latin'] })
+const bakbak = Bakbak_One({weight: '400', subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={bakbak.className}>
+        <FlowField className='absolute top-0 left-0 -z-10 w-screen min-h-screen overflow-hidden' />
+        {children}
+      </body>
     </html>
   )
 }
