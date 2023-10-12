@@ -11,7 +11,8 @@ export default function NavBar() {
     const links = [
         {label: 'Home', href: '/'},
         {label: 'Coffee', href: '/coffee'},
-        {label: 'Our Team', href: '/team'}
+        {label: 'Our Team', href: '/team'},
+        {label: 'Testimonials', href: '/testimonial'}
     ]
     return (
         <nav className="navbar flex justify-between mb-2 bg-base-100/50">
@@ -38,7 +39,7 @@ export default function NavBar() {
                 <ul>
                     {links.map((link, i) => (
                         <li key={i} className={`menu menu-horizontal border-base-content ${link.href === currentPath ? 'border-b-2' : 'border-b-0'} transition-all`}>
-                            <Link href={link.href} className="text-lg">{link.label}</Link>
+                            <Link href={link.href} className="text-base">{link.label}</Link>
                         </li>
                     ))}
                 </ul>
@@ -54,7 +55,7 @@ export default function NavBar() {
                 </label>
                 <label className="btn btn-ghost btn-circle">
                   <div className="indicator">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-8 aspect-square" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
                     <span className="badge badge-sm indicator-item">
                         0
                     </span>
