@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="winter">
       <body className={bakbak.className}>
         <FlowField className='absolute top-0 left-0 -z-10 w-screen min-h-screen overflow-hidden' />
         {children}
