@@ -1,9 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Bakbak_One } from 'next/font/google'
+import { Bakbak_One, Inter } from 'next/font/google'
 import FlowField from '@/components/FlowField'
 import NavBar from '@/components/NavBar'
-//const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 const bakbak = Bakbak_One({weight: '400', subsets: ['latin']})
 
 export const metadata: Metadata = {
@@ -17,11 +17,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-theme="winter">
-      <body className={bakbak.className}>
+    <html id="html" lang="en" data-theme="winter">
+      <body className={`${inter.className}`}>
         <NavBar />
         <FlowField className='absolute top-0 left-0 -z-10 w-screen min-h-screen overflow-hidden' />
-        {children}
+        <main className='p-4'>{children}</main>
       </body>
     </html>
   )
