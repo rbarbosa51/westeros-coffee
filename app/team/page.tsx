@@ -25,13 +25,11 @@ export default function TeamPage() {
                     <p>Daenerys Targaryen, Chief Executive Officer (center)</p>
                     <p>Jon Snow, Chief Strategic Officer, Leader Division North (Left)</p>
                     <p>Tyrion Lanister, Chief Financial Officer, Leader Division East (right)</p>
-                    {/* <p className="">Our team is</p> */}
-                    {/* <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Learn now!</button>
-                    </div> */}
+                    
                 </div>
             </div>
             {/* ll */}
+            <div className='divider mt-2 w-[90%] mx-auto'></div>
             {/* Farmers */}
             <h2 className="text-primary text-center text-xl lg:text-2xl my-4">Compare our farming</h2>
             <div className="flex flex-col lg:flex-row justify-between items-center">
@@ -39,7 +37,7 @@ export default function TeamPage() {
                     <figure><img src="/farmers.jpeg" className="rounded-xl " /></figure>
                     <div className="card-body">
                         {/* <h2 className="card-title text-center">Board Members</h2> */}
-                        <p>Our coffee beans is the work of very happy farmers from all corners of Westeros</p>
+                        <p>Our coffee beans are the work of very happy farmers from all corners of Westeros.</p>
                     </div>
                 </div>
                 <div className="divider divider-vertical lg:divider-horizontal ">Or</div>
@@ -50,6 +48,7 @@ export default function TeamPage() {
                     </div>
                 </div>
             </div>
+            <div className='divider mt-2 w-[90%] mx-auto'></div>
             {/* Brewing */}
             <h2 className="text-primary text-center text-xl lg:text-2xl my-4">Compare Our Process</h2>
             <div className="flex flex-col lg:flex-row justify-between items-center">
@@ -57,14 +56,14 @@ export default function TeamPage() {
                     <figure><img src="/dragon1.jpeg" className="rounded-xl " /></figure>
                     <div className="card-body">
                         {/* <h2 className="card-title text-center">Board Members</h2> */}
-                        <p>Our coffee is brewed with the help of Dragon Fire</p>
+                        <p>Our coffee is brewed with the help of Dragon Fire. Dragon Fire ensures the highest quality.</p>
                     </div>
                 </div>
                 <div className="divider divider-vertical lg:divider-horizontal ">Or</div>
                 <div className="card glass w-[45%] p-2 lg:p-4 shadow-lg">
                     <figure><img src="/night_coffee.jpeg" className="rounded-xl " /></figure>
                     <div className="card-body">
-                        <p>Our rival's coffee is brewed by ice zombies in very unsanitary conditions</p>
+                        <p>Our rival's coffee is brewed by ice zombies in very unsanitary conditions.</p>
                     </div>
                 </div>
             </div>
