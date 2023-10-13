@@ -20,8 +20,9 @@ export default function RootLayout({
     <html id="html" lang="en" data-theme="winter">
       <body className={`${inter.className}`}>
         <NavBar />
-        <FlowField className='absolute top-0 left-0 -z-10 w-screen min-h-screen overflow-hidden' />
-        <main className='p-4'>{children}</main>
+        {/* <FlowField className='absolute top-0 left-0 -z-10 w-screen min-h-screen overflow-hidden' /> */}
+        <div className='divider -mt-2 w-[90%] mx-auto'></div>
+        <main className='px-4'>{children}</main>
       </body>
     </html>
   )

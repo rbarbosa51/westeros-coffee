@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  transition-duration: 250ms;
+  transition-duration: 200ms;
 }
 /* :root {
   --foreground-rgb: 0, 0, 0;
