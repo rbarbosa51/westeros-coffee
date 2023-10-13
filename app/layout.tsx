@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html id="html" lang="en" data-theme="winter">
-      <body className={`${inter.className} bg-base-100`}>
+      <body className={`${inter.className} bg-base-200`}>
         <NavBar />
         {/* <FlowField className='absolute top-0 left-0 -z-10 w-screen min-h-screen overflow-hidden' /> */}
         <div className='divider -mt-2 w-[90%] mx-auto'></div>
