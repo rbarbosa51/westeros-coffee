@@ -5,6 +5,8 @@ interface iProps {
 }
 export default function Footer({className}: iProps) {
     return (
+        <>
+        <div className='divider mt-2 w-[90%] mx-auto'></div>
         <div className={className}>
             {/* <h2 className="text-primary text-center text-xl lg:text-2xl my-4">Share on Social Media</h2> */}
             <div className="flex flex-col lg:flex-row items-center gap-4 justify-between">
@@ -20,7 +22,7 @@ export default function Footer({className}: iProps) {
                 </div>
                 <div className="w-[45%] ">
                     <h2 className="text-primary text-center text-xl lg:text-2xl">Hire me</h2>
-                    <p>Do you like my work??  Hire me!!!!</p>
+                    <p>Do you like my work?? I am looking to be a valuable teammember.</p>
                     <div className="mt-4 flex justify-start">
                       <div className="w-[50%]">Contact Me</div>
                       <div className="underline">
@@ -51,5 +53,6 @@ export default function Footer({className}: iProps) {
                 </div>
             </div>
         </div>
+        </>
     )
 }

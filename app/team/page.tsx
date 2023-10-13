@@ -67,7 +67,7 @@ export default function TeamPage() {
                     </div>
                 </div>
             </div>
-            <div className='divider mt-2 w-[90%] mx-auto'></div>
+            {/* <div className='divider mt-2 w-[90%] mx-auto'></div> */}
         </div>
     )
 }
