@@ -8,7 +8,7 @@ export default function TeamPage() {
             <div className="card glass p-2 lg:p-4 mt-2 shadow-lg">
                 <figure><img src="/OurCEO.jpeg" className="rounded-xl" /></figure>
                 <div className="card-body ">
-                    <h2 className="card-title">Daenerys Targaryen</h2>
+                    <h2 className="card-title text-accent">Daenerys Targaryen</h2>
                     <p>Daenerys Stormborn of House Targaryen, the First of Her Name, Queen of the Andals and the First Men, Protector of the Seven Kingdoms, the Mother of Dragons, the Khaleesi of the Great Grass Sea, the Unburnt, the Breaker of Chains.</p>
                     <p className="font-bold">and now... CEO of Westeros Coffee!!!</p>
                 </div>
@@ -17,7 +17,7 @@ export default function TeamPage() {
             <div className="card glass lg:card-side p-2 lg:p-4 mt-4 shadow-lg">
                 <figure><img src="/BoardMembers.jpeg" className="rounded-xl " /></figure>
                 <div className="card-body ">
-                    <h2 className="card-title">Board Members</h2>
+                    <h2 className="card-title text-accent">Board Members</h2>
                     <p>Daenerys Targaryen, Chief Executive Officer (center)</p>
                     <p>Jon Snow, Chief Strategic Officer, Leader Division North (Left)</p>
                     <p>Tyrion Lanister, Chief Financial Officer, Leader Division East (right)</p>
@@ -32,7 +32,6 @@ export default function TeamPage() {
                 <div className="card glass w-[45%] p-2 lg:p-4 shadow-lg">
                     <figure><img src="/farmers.jpeg" className="rounded-xl " /></figure>
                     <div className="card-body">
-                        {/* <h2 className="card-title text-center">Board Members</h2> */}
                         <p>Our coffee beans are the work of very happy farmers from all corners of Westeros.</p>
                     </div>
                 </div>
@@ -51,7 +50,7 @@ export default function TeamPage() {
                 <div className="card glass p-2 lg:p-4 w-[45%] shadow-lg">
                     <figure><img src="/dragon1.jpeg" className="rounded-xl " /></figure>
                     <div className="card-body">
-                        <p>Our coffee is roasted with the help of Dragon Fire. Dragon Fire ensures the highest quality.</p>
+                        <p>Our coffee is roasted with actual Dragon Fire. Dragon Fire ensures the highest quality.</p>
                     </div>
                 </div>
                 <div className="divider divider-vertical lg:divider-horizontal ">Or</div>
