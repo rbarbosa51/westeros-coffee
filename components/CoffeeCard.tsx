@@ -1,5 +1,8 @@
 "use client"
 import { useState } from "react"
+import { useStore } from "@/app/(store)/store"
+import { useRef } from "react"
+
 interface iProps {
     id: string
     name: string
@@ -9,7 +12,18 @@ interface iProps {
 }
 
 export default function CoffeeCard({id, name, description, image, amount}: iProps) {
+    const {addTransaction} = useStore()
     const [currentQuantity, setCurrentQuantity] = useState<number>(0)
+    const dialogElement = useRef<HTMLDialogElement | null>(null)
+
+    const addToCart = () => {
+        if (currentQuantity > 0) {
+            addTransaction(id, currentQuantity)
+        } else {
+            dialogElement.current!.showModal()
+        }
+    }
+    
     return (
         <div className="card glass shadow-lg w-72">
             <div className="card-body">
@@ -26,8 +40,19 @@ export default function CoffeeCard({id, name, description, image, amount}: iProp
                     <input type="text" readOnly value={currentQuantity} className="input input-ghost w-14 text-center" />
                     <button className="text-2xl btn" onClick={() => setCurrentQuantity(prev => prev > 0 ? prev - 1: prev)}>-</button>
                 </div>
-                <button className="btn btn-primary">Add to Cart</button>
+                <button className="btn btn-primary" onClick={addToCart}>Add to Cart</button>
             </div>
+            <dialog ref={dialogElement} id="my_modal_1" className="modal">
+                <div className="modal-box">
+                  <h3 className="font-bold text-lg">Quantity</h3>
+                  <p className="py-4">Please enter a quantity </p>
+                  <div className="modal-action">
+                    <form method="dialog">
+                      <button className="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+            </dialog>
         </div>
     )
 }

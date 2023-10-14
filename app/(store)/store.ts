@@ -1,19 +1,23 @@
 import { create } from "zustand";
 
-export interface Transaction {
+interface Transaction {
     priceId: string
     quantity: number
 }
+
 export interface TransactionStore {
     transaction: Transaction[]
+    addTransaction: (priceId: string, quantity: number) => void
+    removeTransaction: (id: string) => void
 }
 
 export const useStore = create<TransactionStore>((set) => ({
     transaction: [],
     addTransaction: (priceId: string, quantity: number) => {
-        set(state => (
-            {transaction: [...state.transaction, {priceId: priceId, quantity: quantity} as Transaction] }
-        ))
+        set(state => {
+            const rest = state.transaction.filter(t => t.priceId !== priceId)
+            return {transaction: [...rest, {priceId: priceId, quantity: quantity} as Transaction]}
+        })
     },
     removeTransaction: (id: string) => {
         set(state => ({

@@ -3,7 +3,6 @@ import Stripe from "stripe"
 import { CoffeeCard } from "@/components"
 import { useState, useEffect } from "react";
 
-
 export default function CoffeePage() {
   const [prices, setPrices] = useState<Stripe.Price[]>([])
 
