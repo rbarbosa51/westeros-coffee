@@ -20,14 +20,14 @@ export default function Home() {
           <p>Awards: </p>
           <ul className="">
             <li className="list-disc">Best Coffee Brand in Westeros</li>
-            <li className="list-disc">Best Inovative coffee Flavors (Khaleesi Blend)</li>
+            <li className="list-disc">Most Inovative Coffee Blend (Khaleesi Blend)</li>
             <li className="list-disc">Westeros 2023 Coffee Expo Flavor of the year (King's Landing)</li>
             <li className="list-disc">Fastest Shipping in all of Westeros</li>
             <li className="list-disc">Best places to work (1st place)</li>
             <li className="list-disc">Most aromatic blend (Dragon With In flavor)</li>
             <li className="list-disc">Award for ethical treatment of dragons</li>
           </ul>
-            <button className="btn btn-primary w-64 mt-4 mx-auto"><Link href={'/coffee'}>Browse our collection</Link></button>
+            <button className="btn btn-primary w-48 lg:w-64 mt-4 mx-auto"><Link href={'/coffee'}>Browse our collection</Link></button>
         </div>
       </div>
       {/* Shipping */}
