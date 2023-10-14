@@ -1,28 +1,32 @@
+"use client"
 import Stripe from "stripe"
 import { CoffeeCard } from "@/components"
+import { useState, useEffect } from "react";
 
-async function getStripeProducts() {
-  const stripe = new Stripe(process.env.STRIPE_SECRET ?? '', {
-    apiVersion: '2023-08-16'
-  })
-  const res = await stripe.prices.list({
-    expand: ['data.product']
-  })
-  const prices = res.data
-  console.log(prices)
-  return prices
-}
 
-export default async function CoffeePage() {
-  const products = await getStripeProducts();
-  //console.log(products)
+export default function CoffeePage() {
+  const [prices, setPrices] = useState<Stripe.Price[]>([])
+
+  const getStripeProducts = async () => {
+    const response = await fetch('/api/getproducts')
+    const data = await response.json() as Stripe.Price[]
+    setPrices(data)
+  }
+  
+  useEffect( () => {
+    (async () => {
+      await getStripeProducts()
+    })()
+  }, [])
+  
   return (
     <div className="flex flex-wrap gap-8 justify-center mt-4 lg:mt-8 ">
-      {products && products.map((item: any) => (
+      {prices && prices.map((item: any) => (
         <CoffeeCard key={item.id} id={item.id} name={item.product.name} 
         description={item.product.description} image={item.product.images[0]} 
         amount={item.unit_amount / 100}/>
       ))}
+      
     </div>
     
   )
