@@ -13,7 +13,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-social-icons": "^6.4.0",
-    "stripe": "^13.9.0"
+    "stripe": "^13.9.0",
+    "zustand": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^20",
