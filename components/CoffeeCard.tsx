@@ -1,5 +1,5 @@
 "use client"
-
+import { useState } from "react"
 interface iProps {
     id: string
     name: string
@@ -9,6 +9,7 @@ interface iProps {
 }
 
 export default function CoffeeCard({id, name, description, image, amount}: iProps) {
+    const [currentAmount, setCurrentAmount] = useState<number>(0)
     return (
         <div className="card glass shadow-lg w-72">
             <div className="card-body">
@@ -21,9 +22,9 @@ export default function CoffeeCard({id, name, description, image, amount}: iProp
                 </div>
                 <div className="divider divider-vertical"></div>
                 <div className="flex justify-center -mt-4">
-                    <button className="text-2xl btn">+</button>
-                    <input type="text" defaultValue={0} className="input input-ghost w-12 text-center" />
-                    <button className="text-2xl btn">-</button>
+                    <button className="text-2xl btn" onClick={() => setCurrentAmount(prev => prev < 99 ? prev + 1: prev)}>+</button>
+                    <input type="text" value={currentAmount} className="input input-ghost w-14 text-center" />
+                    <button className="text-2xl btn" onClick={() => setCurrentAmount(prev => prev > 0 ? prev - 1: prev)}>-</button>
                 </div>
                 <button className="btn btn-primary">Add to Cart</button>
             </div>
