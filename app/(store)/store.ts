@@ -3,17 +3,19 @@ import { create } from "zustand";
 interface Transaction {
     priceId: string
     quantity: number
+    name: string
+    price: number
 }
 
 export interface TransactionStore {
     transaction: Transaction[]
-    addTransaction: (priceId: string, quantity: number) => void
+    addTransaction: (priceId: string, quantity: number, name:string, price: number) => void
     removeTransaction: (id: string) => void
 }
 
 export const useStore = create<TransactionStore>((set) => ({
     transaction: [],
-    addTransaction: (priceId: string, quantity: number) => {
+    addTransaction: (priceId: string, quantity: number, name: string, price: number) => {
         set(state => {
             const rest = state.transaction.filter(t => t.priceId !== priceId)
             return {transaction: [...rest, {priceId: priceId, quantity: quantity} as Transaction]}
@@ -23,5 +25,6 @@ export const useStore = create<TransactionStore>((set) => ({
         set(state => ({
             transaction: state.transaction.filter(t => t.priceId !== id)
         }))
-    }
+    },
+    
 }))

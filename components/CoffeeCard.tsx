@@ -18,7 +18,7 @@ export default function CoffeeCard({id, name, description, image, amount}: iProp
 
     const addToCart = () => {
         if (currentQuantity > 0) {
-            addTransaction(id, currentQuantity)
+            addTransaction(id, currentQuantity, name, amount)
         } else {
             dialogElement.current!.showModal()
         }
