@@ -32,7 +32,7 @@ export default function CheckOutDrawer({open, setOpen}:iProp) {
                     {(transaction.length > 0) ? 
                         (
                             transaction.map((price, i) => (
-                                <tr key={i} className="font-bold text-left">
+                                <tr key={i} className={`font-bold text-left ${(i % 2 === 0) ? 'bg-base-300' : 'bg-base-200'}`}>
                                     <td>{price.name}</td>
                                     <td>{price.quantity}</td>
                                     <td>{(price.quantity * price.price / 100).toLocaleString('en-US', {style: 'currency', currency: 'USD'})}</td>
@@ -40,7 +40,10 @@ export default function CheckOutDrawer({open, setOpen}:iProp) {
                             ))
                         ) :
                         (
-                            <h1 className="text-2xl lg:text-3xl text-accent my-[50%]">Cart is Empty</h1>
+                            // <h1 className="text-2xl lg:text-3xl text-accent my-[10%] text-center">Cart is Empty</h1>
+                            <tr className="text-accent text-2xl lg:text-3xl">
+                                <td>Checkout</td>
+                            </tr>
                         )
                     }
                     <tr>
@@ -49,10 +52,10 @@ export default function CheckOutDrawer({open, setOpen}:iProp) {
                 </tbody>
             </table>
             
-            {/* <div className="card-actions"> */}
+            <div className="card-actions">
                 {/* @ts-ignore */}
                 <button className="btn btn-primary mb-2" onClick={handleClick}>Proceed to Checkout</button>
-            {/* </div> */}
+            </div>
         </div>
     )
 }
