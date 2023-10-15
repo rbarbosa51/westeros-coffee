@@ -21,7 +21,6 @@ export default function NavBar() {
         {label: 'Testimonials', href: '/testimonial'}
     ]
     const cartButton = () => {
-        //console.log("Cart!!")
         setOpen(prev => !prev)
     }
     return (
@@ -73,6 +72,7 @@ export default function NavBar() {
                 </label>
             </div>
             {/* Drawer */}
+            {/* @ts-ignore */}
             <CheckOutDrawer open={open} setOpen={setOpen}/>
         </nav>
     )

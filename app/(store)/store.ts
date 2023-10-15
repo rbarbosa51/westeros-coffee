@@ -18,7 +18,7 @@ export const useStore = create<TransactionStore>((set) => ({
     addTransaction: (priceId: string, quantity: number, name: string, price: number) => {
         set(state => {
             const rest = state.transaction.filter(t => t.priceId !== priceId)
-            return {transaction: [...rest, {priceId: priceId, quantity: quantity} as Transaction]}
+            return {transaction: [...rest, {priceId: priceId, quantity: quantity, name: name, price: price} as Transaction]}
         })
     },
     removeTransaction: (id: string) => {
