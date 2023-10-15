@@ -39,7 +39,7 @@ export default function TeamPage() {
                 <div className="card glass w-[45%] p-2 lg:p-4 shadow-lg">
                     <figure><img src="/icepicking.jpeg" className="rounded-xl " /></figure>
                     <div className="card-body">
-                        <p>Our rival's coffee beans are collected via ice zombies. The beans are infused with harmful white walker particles.</p>
+                        <p>Our rivals coffee beans are collected via ice zombies. The beans are infused with harmful white walker particles.</p>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@ export default function TeamPage() {
                 <div className="card glass w-[45%] p-2 lg:p-4 shadow-lg">
                     <figure><img src="/night_coffee.jpeg" className="rounded-xl " /></figure>
                     <div className="card-body">
-                        <p>Our rival's coffee is brewed by ice zombies in very unsanitary conditions.</p>
+                        <p>Our rivals coffee is brewed by ice zombies in very unsanitary conditions.</p>
                     </div>
                 </div>
             </div>

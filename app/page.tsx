@@ -21,7 +21,7 @@ export default function Home() {
           <ul className="">
             <li className="list-disc">Best Coffee Brand in Westeros</li>
             <li className="list-disc">Most Inovative Coffee Blend (Khaleesi Blend)</li>
-            <li className="list-disc">Westeros 2023 Coffee Expo Flavor of the year (King's Landing)</li>
+            <li className="list-disc">Westeros 2023 Coffee Expo Flavor of the year (Kings Landing)</li>
             <li className="list-disc">Fastest Shipping in all of Westeros</li>
             <li className="list-disc">Best places to work (1st place)</li>
             <li className="list-disc">Most aromatic blend (Dragon With In flavor)</li>
