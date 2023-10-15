@@ -1,5 +1,6 @@
-"use client"
+// "use client"
 import { useStore } from "@/app/(store)/store"
+import axios from "axios"
 
 interface iProp {
     open?: boolean
@@ -10,9 +11,36 @@ export default function CheckOutDrawer({open, setOpen}:iProp) {
     const {transaction} = useStore();
     
     const handleClick = () => {
-        console.log(transaction)
         //@ts-ignore
         setOpen(prev => !prev)
+    }
+    const openStripe = async (e:any) => {
+        e.preventDefault();
+        const listItems = transaction.map(price => (
+            {price:price.priceId, quantity:price.quantity}
+        ))
+        
+        // const response = await fetch('/api/payment', {
+        //     method: 'POST',
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //     },
+        //     body: JSON.stringify(listItems)
+        // })
+        //console.log(response)
+        const {data} = await axios.post('/api/payment', 
+            listItems,
+            {
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            }
+        )
+        //console.log(data)
+        window.location.assign(data)
+        //@ts-ignore
+        setOpen(prev => !prev);
+
     }
     return (
         <div className={`card ${open ? 'flex' : 'hidden'} min-h-96 w-96 absolute z-30 shadow-xl right-0 top-2 bg-base-200`}>
@@ -40,9 +68,8 @@ export default function CheckOutDrawer({open, setOpen}:iProp) {
                             ))
                         ) :
                         (
-                            // <h1 className="text-2xl lg:text-3xl text-accent my-[10%] text-center">Cart is Empty</h1>
                             <tr className="text-accent text-2xl lg:text-3xl">
-                                <td>Checkout</td>
+                                <td>Cart is Empty.</td>
                             </tr>
                         )
                     }
@@ -54,7 +81,7 @@ export default function CheckOutDrawer({open, setOpen}:iProp) {
             
             <div className="card-actions">
                 {/* @ts-ignore */}
-                <button className="btn btn-primary mb-2" onClick={handleClick}>Proceed to Checkout</button>
+                <button className="btn btn-primary mb-2" onClick={openStripe}>Proceed to Checkout</button>
             </div>
         </div>
     )

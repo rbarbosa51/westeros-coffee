@@ -26,7 +26,7 @@ export default function CoffeeCard({id, name, description, image, amount}: iProp
     }
     useEffect(() => {
         if (showMessage) {
-            setTimeout(() => setShowMessage(false), 1000)
+            setTimeout(() => setShowMessage(false), 750)
         }
     }, [showMessage])
     return (
