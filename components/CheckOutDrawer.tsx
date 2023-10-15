@@ -22,10 +22,10 @@ export default function CheckOutDrawer({open, setOpen}:iProp) {
             </div>
             <ul>
                 {(transaction.length > 0) ? transaction.map((price, i) => (
-                    <div key={i} className="flex flex-col font-bold mx-auto w-[90%]">
-                        <div className="flex w-full gap-24 justify-between items-center">
-                            <div className="w-[40%]">{price.name}</div>
-                            <div className="">Quantity: {price.quantity}</div>
+                    <div key={i} className="flex flex-col font-bold mx-auto w-[95%]">
+                        <div className="flex w-full gap-16 justify-between items-center">
+                            <div className="w-1/2">{price.name}</div>
+                            <div className="w-1/2">Quantity: {price.quantity}</div>
                         </div>
                         <div className="flex w-full gap-52 justify-between items-center">
                             <div>Total:</div>
