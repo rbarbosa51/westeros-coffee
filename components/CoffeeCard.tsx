@@ -26,7 +26,7 @@ export default function CoffeeCard({id, name, description, image, amount}: iProp
     }
     useEffect(() => {
         if (showMessage) {
-            setTimeout(() => setShowMessage(false), 2000)
+            setTimeout(() => setShowMessage(false), 1000)
         }
     }, [showMessage])
     return (
@@ -37,7 +37,7 @@ export default function CoffeeCard({id, name, description, image, amount}: iProp
                 <p>{description}</p>
                 <div className="flex gap-4 items-center">
                     <div>Price:</div>
-                    <div className="badge badge-accent badge-outline">{amount.toLocaleString('en-US', {style: 'currency', currency: 'USD'})}</div>
+                    <div className="badge badge-accent badge-outline">{(amount / 100).toLocaleString('en-US', {style: 'currency', currency: 'USD'})}</div>
                 </div>
                 <div className="divider divider-vertical"></div>
                 <div className="flex justify-center -mt-4">
