@@ -1,6 +1,6 @@
 // "use client"
 import { useStore } from "@/app/(store)/store"
-import axios from "axios"
+
 
 interface iProp {
     open?: boolean
@@ -20,23 +20,26 @@ export default function CheckOutDrawer({open, setOpen}:iProp) {
             {price:price.priceId, quantity:price.quantity}
         ))
         
-        // const response = await fetch('/api/payment', {
-        //     method: 'POST',
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        //     body: JSON.stringify(listItems)
-        // })
+        const response = await fetch('/api/payment', {
+            method: 'POST',
+            mode: "cors",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(listItems)
+        })
+        const data = await response.json()
         //console.log(response)
-        const {data} = await axios.post('/api/payment', 
-            listItems,
-            {
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-            }
-        )
-        //console.log(data)
+
+        // const {data} = await axios.post('/api/payment', 
+        //     listItems,
+        //     {
+        //         headers: {
+        //             'Content-Type': 'application/json'
+        //         },
+        //     }
+        // )
+        console.log(data)
         window.location.assign(data)
         //@ts-ignore
         setOpen(prev => !prev);
