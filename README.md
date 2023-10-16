@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Westeros Coffee Store
 
-## Getting Started
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-First, run the development server:
+## Description
+
+This is the Westeros Coffee shop. It is a Game of Thrones inspired mock store. It is meant as a showcase of my work. If you enjoy my humor and creativity feel free to contact me and hire me.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [ScreenShot](#screenshot)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run install
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+It is meant to be viewed online. Pleas visit it's site.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## ScreenShots
 
-## Learn More
+Home
+![Home](./assets/1.png)
+Coffee Store
+![Coffee](./assets/2.png)
+Team Members
+![Team](./assets/3.png)
+Testimonials (Dark mode)
+![Testimonials](./assets/4.png)
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is covered under the following: MIT License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Submit a GitHub Issue.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tests
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+N/A
+
+## Questions
+
+Submit a GitHub Issue
+
+Github User Name: rbarbosa51
+
+Github Profile URL: https://github.com/rbarbosa51
