@@ -31,12 +31,19 @@ It is meant to be viewed online. Pleas visit it's site.
 ## ScreenShots
 
 Home
+
 ![Home](./assets/1.png)
+
 Coffee Store
+
 ![Coffee](./assets/2.png)
+
 Team Members
+
 ![Team](./assets/3.png)
+
 Testimonials (Dark mode)
+
 ![Testimonials](./assets/4.png)
 
 ## License
