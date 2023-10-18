@@ -66,6 +66,7 @@ export default function Home() {
             We now provide expedited shipping via Dragon. You can now get your
             favorite coffee even faster.
           </p>
+          <p className="text-lg"><em><span className="text-accent">Warning:</span> By purchasing from us, you are indemnifying us from any damage caused by the delivery Dragon during delivery. This includes the unlikely event that the delivery Dragon burns and eats your goats or kids.</em></p>
         </div>
       </div>
     </div>
