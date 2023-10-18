@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     "Game of Thrones",
   ],
   viewport: "width=device-width, initial-scale=1",
-  metadataBase: new URL("http://localhost"),
+  metadataBase: new URL("https://westeros-coffee.vercel.app/"),
   openGraph: {
     title: "Westeros Coffee",
     type: "website",
-    images: "/dragon1.jpeg",
-    url: "http://localhost",
+    images: "https://westeros-coffee.vercel.app/dragon1.jpeg",
+    url: "https://westeros-coffee.vercel.app/",
   },
 };
 
@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html id="html" lang="en" data-theme="winter">
-      <body className={`${inter.className} bg-base-200`}>
+      <body className={`${inter.className} bg-base-200 heropattern-topography-current/10`}>
         <NavBar />
         {/* <FlowField className='absolute top-0 left-0 -z-10 w-screen min-h-screen overflow-hidden' /> */}
         <div className="divider -mt-2 w-[90%] mx-auto"></div>

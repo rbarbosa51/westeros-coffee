@@ -2,7 +2,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <div className="hero h-1/2 glass my-4">
+      <div className="hero h-1/2 glass my-4 shadow-xl rounded-2xl">
         <div className="hero-content text-center">
           <div className="max-w-xl">
             <h1 className="text-5xl font-bold text-primary">

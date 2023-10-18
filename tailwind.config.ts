@@ -15,7 +15,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('tailwindcss-hero-patterns')],
   daisyui: {
     themes: ["winter", "dracula"],
   },
