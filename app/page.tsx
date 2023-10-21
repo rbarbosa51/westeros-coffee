@@ -54,19 +54,24 @@ export default function Home() {
       {/* Shipping */}
       <div className="card card-side w-full glass shadow-xl">
         <figure>
-          <img
-            src="/shipping.jpeg"
-            alt="Shipping"
-            className="aspect-square"
-          />
+          <img src="/shipping.jpeg" alt="Shipping" className="aspect-square" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title text-3xl lg:text-4xl text-accent">Shipping</h2>
-          <p >
+          <h2 className="card-title text-3xl lg:text-4xl text-accent">
+            Shipping
+          </h2>
+          <p>
             We now provide expedited shipping via Dragon. You can now get your
             favorite coffee even faster.
           </p>
-          <p><em><span className="text-accent">Warning:</span> By purchasing from us, you are indemnifying us from any damage caused by the Dragon during delivery. This includes the unlikely event that the delivery Dragon burns and eats your goats or kids.</em></p>
+          <p>
+            <em>
+              <span className="text-accent">Warning:</span> By purchasing from
+              us, you are indemnifying us from any damage caused by the Dragon
+              during delivery. This includes the unlikely event that the
+              delivery Dragon burns and eats your goats or kids.
+            </em>
+          </p>
         </div>
       </div>
     </div>

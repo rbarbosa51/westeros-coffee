@@ -80,8 +80,8 @@ export default function Footer({ className }: iProps) {
         </div>
       </div>
       <p className="text-center text-base">
-        Disclaimer: This is not a real company. This site is part of a
-        developer profile.
+        Disclaimer: This is not a real company. This site is part of a developer
+        profile.
       </p>
       <p className="text-center text-base">
         @ 2023 Rafael Barbosa, All rights reserved

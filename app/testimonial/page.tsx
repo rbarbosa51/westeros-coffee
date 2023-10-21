@@ -22,7 +22,7 @@ export default function TestimonialPage() {
         <TestimonialCard
           title="Jason"
           image="/jason.jpeg"
-          text='The Dragon with In flavor packed a punch. Unfortunetely, I cant give a favorable review since the delivery Dragon ate one of the kids.'
+          text="The Dragon with In flavor packed a punch. Unfortunetely, I cant give a favorable review since the delivery Dragon ate one of the kids."
           rating={"2.3 / 5"}
         />
         <TestimonialCard

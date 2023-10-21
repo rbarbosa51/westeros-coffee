@@ -1,11 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Bakbak_One, Inter } from "next/font/google";
-//import FlowField from '@/components/FlowField'
-//import NavBar from '@/components/NavBar'
-import { NavBar, FlowField, Footer } from "@/components";
+import { Inter } from "next/font/google";
+import { NavBar, Footer } from "@/components";
+import NextTopLoader from "nextjs-toploader";
+
 const inter = Inter({ subsets: ["latin"] });
-//const bakbak = Bakbak_One({weight: '400', subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: "Westeros Coffee",
@@ -34,7 +33,10 @@ export default function RootLayout({
 }) {
   return (
     <html id="html" lang="en" data-theme="winter">
-      <body className={`${inter.className} bg-base-200 heropattern-topography-current/10`}>
+      <body
+        className={`${inter.className} bg-base-200 heropattern-topography-current/10`}
+      >
+        <NextTopLoader />
         <NavBar />
         {/* <FlowField className='absolute top-0 left-0 -z-10 w-screen min-h-screen overflow-hidden' /> */}
         <div className="divider -mt-2 w-[90%] mx-auto"></div>

@@ -15,7 +15,7 @@ export default function CheckOutDrawer({ open, setOpen }: iProp) {
   };
   const openStripe = async (e: any) => {
     e.preventDefault();
-    
+
     const listItems = transaction.map((price) => ({
       price: price.priceId,
       quantity: price.quantity,
@@ -95,12 +95,9 @@ export default function CheckOutDrawer({ open, setOpen }: iProp) {
             Proceed to Checkout
           </button>
         </div>
-      ): (
+      ) : (
         <p></p>
       )}
-      
-      
-      
     </div>
   );
 }
