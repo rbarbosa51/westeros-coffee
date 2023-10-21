@@ -2,7 +2,7 @@ export default function CancelPage() {
   return (
     <div>
       <h1 className="text-primary text-center text-3xl lg:text-4xl">
-        Something was wrong.
+        Something went wrong.
       </h1>
       <div className="mt-4 lg:mt-8">
         <img

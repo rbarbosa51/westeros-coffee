@@ -1,4 +1,4 @@
-// "use client"
+//"use client"
 import { useStore } from "@/app/(store)/store";
 
 interface iProp {
@@ -15,6 +15,7 @@ export default function CheckOutDrawer({ open, setOpen }: iProp) {
   };
   const openStripe = async (e: any) => {
     e.preventDefault();
+    
     const listItems = transaction.map((price) => ({
       price: price.priceId,
       quantity: price.quantity,
@@ -87,13 +88,19 @@ export default function CheckOutDrawer({ open, setOpen }: iProp) {
           </tr>
         </tbody>
       </table>
-
-      <div className="card-actions">
-        {/* @ts-ignore */}
-        <button className="btn btn-primary mb-2" onClick={openStripe}>
-          Proceed to Checkout
-        </button>
-      </div>
+      {transaction.length > 0 ? (
+        <div className="card-actions">
+          {/* @ts-ignore */}
+          <button className="btn btn-primary mb-2" onClick={openStripe}>
+            Proceed to Checkout
+          </button>
+        </div>
+      ): (
+        <p></p>
+      )}
+      
+      
+      
     </div>
   );
 }
