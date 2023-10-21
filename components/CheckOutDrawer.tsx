@@ -29,17 +29,6 @@ export default function CheckOutDrawer({ open, setOpen }: iProp) {
       body: JSON.stringify(listItems),
     });
     const data = await response.json();
-    //console.log(response)
-
-    // const {data} = await axios.post('/api/payment',
-    //     listItems,
-    //     {
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         },
-    //     }
-    // )
-    console.log(data);
     window.location.assign(data);
     //@ts-ignore
     setOpen((prev) => !prev);
