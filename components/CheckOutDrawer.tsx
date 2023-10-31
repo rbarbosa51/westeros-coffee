@@ -83,21 +83,24 @@ export default function CheckOutDrawer({ open, setOpen }: iProp) {
               <td>Cart is Empty.</td>
             </tr>
           )}
-          <tr>
-            <td></td>
-          </tr>
+          <hr className="my-4 w-full"/>
+          {transaction.length > 0 && (
+            <tr className="font-bold text-left"><td>Free Shipping</td><td></td><td>$0.00</td></tr>
+          )}
+          
         </tbody>
       </table>
       {transaction.length > 0 ? (
         <div className="card-actions">
           {/* @ts-ignore */}
-          <button className="btn btn-primary mb-2" onClick={openStripe}>
+          <button className="btn btn-primary mt-2" onClick={openStripe}>
             Proceed to Checkout
           </button>
         </div>
       ) : (
         <p></p>
       )}
+      <p className="text-gray-500 text-sm text-left m-4">Running in test mode. Use Stripe Test Card number 4242 4242 4242 4242, with any future expiration date. For more info see <a href="https://stripe.com/docs/testing">https://stripe.com/docs/testing</a></p>
     </div>
   );
 }

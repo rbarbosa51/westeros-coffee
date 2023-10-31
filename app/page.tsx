@@ -58,17 +58,17 @@ export default function Home() {
         </figure>
         <div className="card-body">
           <h2 className="card-title text-3xl lg:text-4xl text-accent">
-            Shipping
+            Free Shipping!!!
           </h2>
           <p>
-            We now provide expedited shipping via Dragon. You can now get your
+            We now provide <strong className="text-accent">free</strong> expedited shipping via Dragon. You can now get your
             favorite coffee even faster.
           </p>
           <p>
             <em>
               <span className="text-accent">Warning:</span> By purchasing from
               us, you are indemnifying us from any damage caused by the Dragon
-              during delivery. This includes the unlikely event that the
+              during the delivery process. This includes the unlikely scenario where the
               delivery Dragon burns and eats your goats or kids.
             </em>
           </p>
