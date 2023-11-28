@@ -26,7 +26,7 @@ npm run start
 
 ## Usage
 
-It is meant to be viewed online. Pleas visit it's site.
+It is meant to be viewed online. Please visit it's site.
 
 ## ScreenShots
 
