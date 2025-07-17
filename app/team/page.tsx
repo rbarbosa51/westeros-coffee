@@ -8,7 +8,7 @@ export default function TeamPage() {
       {/* <h2 className="text-primary text-center text-xl lg:text-2xl mt-2">Meet our Officers</h2> */}
       <div className="card glass p-2 lg:p-4 mt-2 shadow-lg">
         <figure>
-          <img src="/OurCEO.jpeg" className="rounded-xl" />
+          <img alt="Our CEO" src="/OurCEO.jpeg" className="rounded-xl" />
         </figure>
         <div className="card-body ">
           <h2 className="card-title text-accent">Daenerys Targaryen</h2>
@@ -24,7 +24,7 @@ export default function TeamPage() {
       {/* Our Team */}
       <div className="card glass lg:card-side p-2 lg:p-4 mt-4 shadow-lg">
         <figure>
-          <img src="/BoardMembers.jpeg" className="rounded-xl " />
+          <img alt="Board Members" src="/BoardMembers.jpeg" className="rounded-xl " />
         </figure>
         <div className="card-body ">
           <h2 className="card-title text-accent">Board Members</h2>
@@ -45,7 +45,7 @@ export default function TeamPage() {
       <div className="flex flex-col lg:flex-row justify-between items-center">
         <div className="card glass w-[45%] p-2 lg:p-4 shadow-lg">
           <figure>
-            <img src="/farmers.jpeg" className="rounded-xl " />
+            <img alt="Farmers" src="/farmers.jpeg" className="rounded-xl " />
           </figure>
           <div className="card-body">
             <p>
@@ -59,7 +59,7 @@ export default function TeamPage() {
         </div>
         <div className="card glass w-[45%] p-2 lg:p-4 shadow-lg">
           <figure>
-            <img src="/icepicking.jpeg" className="rounded-xl " />
+            <img alt="Ice Picking" src="/icepicking.jpeg" className="rounded-xl " />
           </figure>
           <div className="card-body">
             <p>
@@ -77,7 +77,7 @@ export default function TeamPage() {
       <div className="flex flex-col lg:flex-row justify-between items-center">
         <div className="card glass p-2 lg:p-4 w-[45%] shadow-lg">
           <figure>
-            <img src="/dragon1.jpeg" className="rounded-xl " />
+            <img alt="Dragon" src="/dragon1.jpeg" className="rounded-xl " />
           </figure>
           <div className="card-body">
             <p>
@@ -91,7 +91,7 @@ export default function TeamPage() {
         </div>
         <div className="card glass w-[45%] p-2 lg:p-4 shadow-lg">
           <figure>
-            <img src="/night_coffee.jpeg" className="rounded-xl " />
+            <img alt="Night Coffee" src="/night_coffee.jpeg" className="rounded-xl " />
           </figure>
           <div className="card-body">
             <p>

@@ -83,7 +83,7 @@ export default function CheckOutDrawer({ open, setOpen }: iProp) {
               <td>Cart is Empty.</td>
             </tr>
           )}
-          <hr className="my-4 w-full"/>
+          
           {transaction.length > 0 && (
             <tr className="font-bold text-left"><td>Free Shipping</td><td></td><td>$0.00</td></tr>
           )}

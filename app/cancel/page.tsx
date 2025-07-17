@@ -7,7 +7,7 @@ export default function CancelPage() {
       <div className="mt-4 lg:mt-8">
         <img
           src="/cancel.jpeg"
-          alt="Success Image"
+          alt="Cancel Image"
           className="lg:w-128 mx-auto"
         />
       </div>

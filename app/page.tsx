@@ -21,14 +21,14 @@ export default function Home() {
         </div>
       </div>
       {/* Awards */}
-      <div className="card w-full glass shadow-xl image-full mb-4 lg:mb-8">
+      <div className="card w-full glass shadow-xl image-full mb-4 lg:mb-8 ">
         <figure>
           <img src="/awards.jpeg" alt="Awards" className="aspect-square w-96" />
         </figure>
         <div className="card-body">
           <h2 className="card-title text-4xl text-accent">Awards</h2>
           <p className="">Our coffee is recipient of multiple awards.</p>
-          <p>Awards: </p>
+          <p >Awards: </p>
           <ul className="">
             <li className="list-disc">Best Coffee Brand in Westeros</li>
             <li className="list-disc">

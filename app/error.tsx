@@ -6,7 +6,7 @@ export default function Error() {
         There was an error in this page
       </h1>
       <div className="relative">
-        <img src="/404.jpeg" className="block w-96 mx-auto mt-4" />
+        <img alt="Error Image" src="/404.jpeg" className="block w-96 mx-auto mt-4" />
       </div>
     </>
   );

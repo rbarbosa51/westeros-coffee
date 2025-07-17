@@ -9,7 +9,7 @@ export default function Error() {
         Please wait while the page loads
       </p>
       <div className="relative">
-        <img src="/dragon2.jpeg" className="block w-96 mx-auto mt-4" />
+        <img alt="Dragon" src="/dragon2.jpeg" className="block w-96 mx-auto mt-4" />
       </div>
     </>
   );

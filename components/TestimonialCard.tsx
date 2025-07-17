@@ -16,7 +16,7 @@ export default function TestimonialCard({
       <div className="card-body">
         <h2 className="card-title text-accent">{title}</h2>
         <figure>
-          <img src={image} className="rounded-xl " />
+          <img alt="Testimonial Image" src={image} className="rounded-xl " />
         </figure>
         <p>{text}</p>
         <div className="flex gap-4 items-center">

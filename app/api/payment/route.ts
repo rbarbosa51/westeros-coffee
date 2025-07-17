@@ -8,7 +8,7 @@ interface ListItem {
 
 export async function POST(request: NextRequest) {
   const stripe = new Stripe(process.env.STRIPE_SECRET ?? "", {
-    apiVersion: "2023-08-16",
+    apiVersion: "2025-06-30.basil",
   });
   let data = (await request.json()) as ListItem[];
   //console.log(data)

@@ -40,7 +40,7 @@ export default function CoffeeCard({
       <div className="card-body">
         <h2 className="card-title text-accent">{name}</h2>
         <figure>
-          <img src={image} className="rounded-xl " />
+          <img alt="Coffee" src={image} className="rounded-xl " />
         </figure>
         <p>{description}</p>
         <div className="flex gap-4 items-center">
